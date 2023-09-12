@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242933;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  width: 90px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  background: white;
+  text-align: right;
+  box-shadow: 0px 10px 0px 0px rgba(173, 171, 171, 0.8);
+}
+
+.hr-menu {
+  margin-right: 50px;
+}
+
+.hamburger {
+  width: 100%;
+  background: white;
+  text-align: right;
+  box-shadow: 0px 10px 0px 0px rgba(173, 171, 171, 0.8);
+}
+.hamburger img {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+  padding: 13px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul > li {
+  display: inline;
+  padding-left: 8px;
+}
+
+/* CONTENT STYLE */
+/* 1. Left */
+.content {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 40% auto;
+  background-color: white;
+  gap: 10px;
+  padding: 25px 20px 25px 20px;
+  border-radius: 7px;
+}
+
+.left {
+  display: flex;
+  gap: 25px;
+}
+
+.left h1 {
+  margin: 0;
+}
+
+.left p {
+  font-size: 18px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 2. Right */
+.right {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+}
+
+.right td {
+  padding: 0 15px;
+}
+
+.tbl-judul {
+  font-weight: bold;
+}
+
+/* FORM STYLE */
+.form {
+  background-color: white;
+  border-radius: 7px;
+  padding: 25px 20px 25px 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.form-item {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-item input {
+  height: 30px;
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 880px) {
+  .navbar {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content {
+    margin: 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .right td {
+    padding: 3px;
+  }
+}
